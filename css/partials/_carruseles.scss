@@ -1,0 +1,31 @@
+
+.carruseles{
+height: 100vh;
+padding-top: 0.7rem;
+.carousel{
+    height: 100vh;
+    padding-top: 0.7rem;
+    .carousel-caption{
+
+        position: relative !important;
+        width: 50% !important;
+        bottom: 35rem !important;
+        left: 11rem!important;
+        text-align: left;
+        line-height: 3.5rem;
+
+        a{
+            position: relative !important;
+            left: 3rem!important;    
+        }
+
+        h5{
+            font-size: 2rem;
+        }
+    }
+}
+}
+
+.carruseles-chico{
+    padding-top: 6rem;
+}

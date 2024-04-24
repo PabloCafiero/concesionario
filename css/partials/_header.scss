@@ -1,0 +1,54 @@
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content:space-between;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        margin-left: 5rem;
+        padding: 10px;
+        img{
+            width: 260px;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 1200px;
+        margin-right: 8rem;
+
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            list-style: none;
+
+            .menu-item{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+
+.foto{
+    border: 1px solid red;
+    width: 100%;
+}

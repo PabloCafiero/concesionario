@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario Cafiero</title>
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="../index.html">
+            <img src="/img/Logo.JPG" alt="logo de Concesionario Cafiero">
+        </a>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item menu-item1">
+                    <a href="./catalogo.html">0km</a>
+                </li>
+                <li class="menu-item menu-item2">
+                    <a href="./catalogo.html">Usados</a>
+                </li>
+                <li class="menu-item menu-item3">
+                    <a href="#">Planes de ahorro</a>
+                </li>
+                <li class="menu-item menu-item4">
+                    <a href="#">Posventa</a>
+                </li>
+                <li class="menu-item menu-item5">
+                    <a href="#">Empresas</a>
+                </li>
+                <li class="menu-item menu-item6">
+                    <a href="#">Seguros</a>
+                </li>
+                <li class="menu-item menu-item7">
+                    <a href="#">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="carruseles-chico">
+
+        <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="../img/foto-fondo4.JPG" class="d-block w-100" alt="...">
+
+                </div>
+
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="../img/foto-fondo5.JPG" class="d-block w-100" alt="...">
+
+                </div>
+
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="../img/foto-fondo6.JPG" class="d-block w-100" alt="...">
+
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <main class="catalogo">
+
+        <div class="buscador">
+
+            <h1>Encontrá tu próximo auto en nuestro catálogo</h1>
+
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+        </div>
+
+        <div class="contenido">
+
+            <aside class="filtros">
+
+                <!-- Filtro Usado / 0km -->
+                <div class="estado">
+
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" >
+                        <label class="btn btn-outline-primary" for="btncheck1">0km</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">Usado</label>
+                    </div>
+
+                </div>
+
+                <!-- Marcas -->
+                <div class="marcas">
+                    <h2>Marcas</h2>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                          <label class="form-check-label" for="firstCheckbox">Audi</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                          <label class="form-check-label" for="secondCheckbox">Bmw</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                          <label class="form-check-label" for="thirdCheckbox">Mercedez Benz</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Ford</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Chevrolet</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">Dodge</label>
+                          </li>
+                      </ul>
+                    
+                </div>
+
+            </aside>
+
+            <section class="resultado-busqueda container">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class=" card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class=" card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class=" card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class=" card" style="width: 18rem;">
+                    <img src="../img/autos/auto1.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        </section>
+
+
+        </div>
+
+
+
+
+    </main>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
