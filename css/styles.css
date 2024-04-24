@@ -27,7 +27,7 @@ header .logo {
   padding: 10px;
 }
 header .logo img {
-  width: 260px;
+  width: 250px;
 }
 header .navbar {
   display: flex;
@@ -102,11 +102,12 @@ header .navbar .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  min-width: 25%;
   gap: 1.5rem;
 }
 .catalogo .contenido .filtros .estado {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 50%;
 }
@@ -125,8 +126,77 @@ header .navbar .menu .menu-item a {
   flex-wrap: wrap;
   gap: 5rem;
   padding: 0 5rem;
-  width: 75%;
+  min-width: 75%;
 }
 .catalogo .contenido .resultado-busqueda .card {
-  min-width: 20rem;
+  min-width: 22rem;
+}
+
+.planes_de_ahorro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+.planes_de_ahorro .planes_de_ahorro_principales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../../img/fondo1.jpg);
+  background-size: cover;
+  align-items: center;
+  margin-bottom: 10rem;
+  height: 70vh;
+  width: 100%;
+}
+.planes_de_ahorro .planes_de_ahorro_principales .auto_mostrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+  gap: 5rem;
+}
+.planes_de_ahorro .planes_de_ahorro_principales .auto_mostrado img {
+  width: 35rem;
+}
+.planes_de_ahorro .planes_de_ahorro_principales .auto_mostrado .info {
+  text-align: left;
+  color: white;
+  font-size: 1.3rem;
+}
+.planes_de_ahorro .planes_de_ahorro_principales .auto_mostrado .info h2 {
+  font-size: 2.7rem;
+}
+.planes_de_ahorro .planes_de_ahorro_principales .botonera {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 70%;
+}
+.planes_de_ahorro .card {
+  background-color: black;
+  color: white;
+}
+.planes_de_ahorro .card img {
+  max-width: 600px;
+}
+.planes_de_ahorro .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 15rem;
+  padding-top: 5rem;
+}
+.planes_de_ahorro .card .card-body h5 {
+  font-size: 2rem;
+}
+.planes_de_ahorro .preguntas_frecuentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+  width: 50%;
 }/*# sourceMappingURL=styles.css.map */

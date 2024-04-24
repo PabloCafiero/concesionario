@@ -1,0 +1,80 @@
+.planes_de_ahorro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 6rem;
+
+    .planes_de_ahorro_principales {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../../img/fondo1.jpg);
+        background-size: cover;
+        align-items: center;
+        margin-bottom: 10rem;
+
+        height: 70vh;
+        width:100%;
+
+        .auto_mostrado {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 8rem;
+            gap: 5rem;
+
+            img {
+                width: 35rem;
+            }
+
+            .info {
+                text-align: left;
+                color: white;
+                font-size: 1.3rem;
+                h2 {
+                    font-size: 2.7rem;
+                }
+            }
+        }
+        .botonera{
+            display: flex;
+            flex-direction: row;
+
+            padding: 1rem;
+            width: 70%;
+        }
+
+    }
+
+
+    .card{
+        background-color: black;
+        color: white;
+        img{
+            max-width: 600px;
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            padding-left: 15rem;
+            padding-top: 5rem;
+            h5{ 
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    .preguntas_frecuentes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem 0;
+        width: 50%;
+    }
+}
