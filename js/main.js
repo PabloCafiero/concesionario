@@ -34,8 +34,6 @@ let busqueda = 0;
 
 
 
-
-
 /* Ingreso Marcas */
 
 
@@ -132,7 +130,6 @@ dodgeCheck.addEventListener('change', function() {
 
 
 
-
 function filtro(){
 
     if(filtroAudi ==1 || filtroBmw == 1 || filtroMercedez == 1 || filtroFord == 1 || filtroChevrolet == 1 || filtroDodge == 1 )
@@ -182,10 +179,9 @@ resultadoBusqueda.append(listaAutos)
 
 
 
-
+imprimirAutos(vacio)
 
 function imprimirAutos(automoviles){
-
     if(busqueda==1){
 
         if(automoviles.length>0){
@@ -197,7 +193,7 @@ function imprimirAutos(automoviles){
                 <div class="card-body">
                     <h5 class="card-title">${auto.marca}   ${auto.modelo}  ${auto.year}</h5>
                     <p class="card-text">$${auto.precio}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>` ;
             });
@@ -214,7 +210,7 @@ function imprimirAutos(automoviles){
             <div class="card-body">
                 <h5 class="card-title">${auto.marca}   ${auto.modelo}  ${auto.year}</h5>
                 <p class="card-text">$${auto.precio}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Comprar</a>
             </div>
         </div>` ;
         });
