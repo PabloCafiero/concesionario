@@ -50,14 +50,19 @@
         }
 
         .resultado-busqueda{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 5rem;
-            padding: 0 5rem;
-            min-width: 75%;
 
 
+            .listaAutos{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 5rem;
+                padding: 0 5rem;
+                min-width: 75%;
+                .card{
+                    min-width: 20rem;
+                }
+            }
 
             .card{
                 min-width: 22rem;

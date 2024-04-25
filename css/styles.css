@@ -120,13 +120,16 @@ header .navbar .menu .menu-item a {
 .catalogo .contenido .filtros .marcas h2 {
   font-size: 1.5rem;
 }
-.catalogo .contenido .resultado-busqueda {
+.catalogo .contenido .resultado-busqueda .listaAutos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5rem;
   padding: 0 5rem;
   min-width: 75%;
+}
+.catalogo .contenido .resultado-busqueda .listaAutos .card {
+  min-width: 20rem;
 }
 .catalogo .contenido .resultado-busqueda .card {
   min-width: 22rem;
@@ -199,4 +202,79 @@ header .navbar .menu .menu-item a {
   gap: 2rem;
   margin: 4rem 0;
   width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid gray;
+}
+footer .footer-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid gray;
+}
+footer .footer-principal .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-principal .footer-logo img {
+  max-width: 200px;
+}
+footer .footer-principal .footer-logo .lista-iconos {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+footer .footer-principal .footer-logo .lista-iconos a {
+  color: black;
+  font-size: 1.5rem;
+}
+footer .footer-principal .footer-autos {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-principal .footer-autos a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-principal .footer-servicios {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-principal .footer-servicios a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-principal .footer-concesionario {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-principal .footer-concesionario a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-principal .footer-texto {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-principal .footer-texto p {
+  margin: 0;
+}
+footer .footer-derechos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+footer .footer-derechos img {
+  max-width: 12rem;
+  height: 1rem;
 }/*# sourceMappingURL=styles.css.map */
