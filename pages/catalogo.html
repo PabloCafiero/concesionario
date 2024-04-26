@@ -21,16 +21,16 @@
 <body>
     <header>
         <a class="logo" href="../index.html">
-            <img src="/img/Logo.JPG" alt="logo de Concesionario Cafiero">
+            <img src="../img/Logo.JPG" alt="logo de Concesionario Cafiero">
         </a>
 
         <nav class="navbar">
             <ul class="menu">
                 <li class="menu-item menu-item1">
-                    <a href="./catalogo.html">0km</a>
+                    <a href="#" class="cerokmLink">0km</a>
                 </li>
                 <li class="menu-item menu-item2">
-                    <a href="./catalogo.html">Usados</a>
+                    <a href="#" class="usadoLink">Usados</a>
                 </li>
                 <li class="menu-item menu-item3">
                     <a href="../pages/planes_de_ahorro.html">Planes de ahorro</a>
@@ -105,20 +105,6 @@
 
             <h1>Encontrá tu próximo auto en nuestro catálogo</h1>
 
-            <div class="input-group mb-3">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-            </div>
         </div>
 
         <div class="contenido">
@@ -129,10 +115,10 @@
                 <div class="estado">
 
                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" >
+                        <input type="checkbox" class="cerokmCheck btn-check" id="btncheck1" autocomplete="off" >
                         <label class="btn btn-outline-primary" for="btncheck1">0km</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <input type="checkbox" class="usadoCheck btn-check" id="btncheck2" autocomplete="off">
                         <label class="btn btn-outline-primary" for="btncheck2">Usado</label>
                     </div>
 
@@ -140,6 +126,7 @@
 
                 <!-- Marcas -->
                 <div class="marcas">
+
                     <h2>Marcas</h2>
 
                     <ul class="list-group">
@@ -171,11 +158,38 @@
                     
                 </div>
 
+                <div class="precio">
+
+                    <h2>Precio</h2>
+
+                    <div class="formularios-precios">
+
+                        <div class="formulario mb-3">
+                            <form action="" class="formularioMin">
+                                <input type="number" class="inputMin form-control" id="formGroupExampleInput" placeholder=" Mínimo">
+                            </form>
+                        </div>
+
+                        <div class="formulario mb-3">
+                            <form action="" class="formularioMax">
+                                <input type="number" class="inputM form-control" id="formGroupExampleInput" placeholder=" Máximo">
+                            </form>
+            
+                        </div>
+     
+                    </div>
+
+
+
+                </div>
+
+
+
             </aside>
 
-            <section class="resultado-busqueda container">
+            <section class="resultado-busqueda ">
 
-                
+
 
             </section>
 

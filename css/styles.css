@@ -101,15 +101,16 @@ header .navbar .menu .menu-item a {
 .catalogo .contenido .filtros {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-width: 25%;
+  align-items: start;
+  padding-left: 6rem;
+  width: 20%;
   gap: 1.5rem;
 }
 .catalogo .contenido .filtros .estado {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 60%;
 }
 .catalogo .contenido .filtros .marcas {
   display: flex;
@@ -120,19 +121,54 @@ header .navbar .menu .menu-item a {
 .catalogo .contenido .filtros .marcas h2 {
   font-size: 1.5rem;
 }
+.catalogo .contenido .filtros .precio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.catalogo .contenido .filtros .precio h2 {
+  font-size: 1.5rem;
+}
+.catalogo .contenido .filtros .precio .formularios-precios {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.catalogo .contenido .filtros .precio .formularios-precios .formulario {
+  width: 8rem;
+}
+.catalogo .contenido .resultado-busqueda {
+  width: 80%;
+  padding: 0 5rem;
+}
 .catalogo .contenido .resultado-busqueda .listaAutos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5rem;
-  padding: 0 5rem;
+  gap: 4rem;
   min-width: 75%;
 }
 .catalogo .contenido .resultado-busqueda .listaAutos .card {
   min-width: 20rem;
 }
 .catalogo .contenido .resultado-busqueda .card {
-  min-width: 22rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 25rem !important;
+  padding-left: 3rem;
+}
+.catalogo .contenido .resultado-busqueda .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px;
+  width: 318px;
+  height: 300px;
+}
+.catalogo .contenido .resultado-busqueda .card p {
+  margin: 0;
+}
+.catalogo .contenido .resultado-busqueda .card .btn {
+  margin-top: 10px;
 }
 
 .planes_de_ahorro {
