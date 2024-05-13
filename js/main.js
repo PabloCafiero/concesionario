@@ -48,7 +48,16 @@ cerokmLink.addEventListener('click', cerokm1);
 
 function cerokm1(){
     cerokmCheck.setAttribute("checked","")
-    cerokm()
+
+    filtro0km = 1;
+    resultado = vacio;
+
+    if (filtroUsado ==1) {
+        filtroUsado =0;
+        usadoCheck.removeAttribute("checked")
+    }
+
+    filtro();
 }
 
 const usadoLink = document.querySelector(".usadoLink")
@@ -56,8 +65,19 @@ const usadoLink = document.querySelector(".usadoLink")
 usadoLink.addEventListener('click', usado1);
 
 function usado1(){
+
     usadoCheck.setAttribute("checked","")
-    usado()
+
+
+    filtroUsado = 1;
+    resultado = vacio;
+
+    if (filtro0km ==1) {
+        filtro0km =0;
+        cerokmCheck.removeAttribute("checked")
+    }
+
+    filtro();
 }
 
 
@@ -76,9 +96,11 @@ function cerokm(){
     }
 
     if (this.checked) {
+        cerokmCheck.setAttribute("checked","")
         filtro0km = 1;
         resultado = vacio;
     } else {
+        cerokmCheck.removeAttribute("checked")
         filtro0km = 0;
         resultado = vacio;
     }
@@ -101,16 +123,19 @@ function usado(){
     }
 
     if (this.checked) {
-
+        usadoCheck.setAttribute("checked","")
         filtroUsado = 1;
         resultado = vacio;
     } else {
+        usadoCheck.removeAttribute("checked")
         filtroUsado = 0;
         resultado = vacio;
     }
 
     filtro();
 }
+
+
 
 /* Ingreso Marcas */
 
@@ -258,10 +283,9 @@ formularioMax.addEventListener("input", (e) => {
 
 function filtro(){
 
+    console.log("filtro0km ",filtro0km)
+    console.log("filtroUsado ",filtroUsado)
 
-/*     console.log("filtro 0km", filtro0km)
-    console.log("filtro usado", filtroUsado)
-    console.log("filtro audi", filtroAudi) */
 
     if (precioMinimo == "") 
         busquedaPrecioMin =0;
@@ -274,11 +298,6 @@ function filtro(){
         busquedaPrecioMax =1;
     
 
-
-    console.log("precio min", precioMinimo)
-    console.log("busqueda precio min", busquedaPrecioMin)
-    console.log("precioax", precioMaximo)
-    console.log("busqueda precio max", busquedaPrecioMax)
 
 
 
@@ -297,10 +316,6 @@ function filtro(){
     busqueda = 1;
     else
     busqueda = 0;
-
-
-
-    console.log("busqueda", busqueda)
 
 
     filtrar()
@@ -353,7 +368,6 @@ function filtrar(){
 
     /* Filtro de precio */
     
-    console.log(resultado)
     if (resultado =="") {
 
         if(busquedaPrecioMin == 1)
@@ -416,12 +430,70 @@ function imprimirCard(auto){
         <h5 class="card-title">${auto.marca}   ${auto.modelo} </h5>
         <p class="card-text">${auto.year}  -  ${auto.kilometraje}km </p>
         <p class="card-text">$${auto.precio}</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <button type="button" class="btn btn-primary botonDeCompra">Comprar</button>
     </div>
 </div>`
 
 
 }
+
+
+
+
+
+
+
+const botonDeCompra = document.getElementsByClassName("botonDeCompra")
+
+
+
+for (let i = 0 ; i < botonDeCompra.length; i++) {
+    botonDeCompra[i].addEventListener('click' , compra , false ) ; 
+}
+
+
+function compra(){
+    
+     Swal.fire({
+        title: 'Ingrese sus Datos ',
+        text: 'Ingrese sus datos',
+        html: `
+        <input placeholder="Ingrese su usuario" id="swal-input1" class="swal2-input">
+        <input placeholder="Ingrese su Contraseña" id="swal-input2" class="swal2-input">
+      `,
+        icon: 'success',
+        iconHtml: '<i class="bi bi-basket3"></i>',
+        confirmButtonText: 'Comprar',
+        showDenyButton: true,
+        denyButtonText: 'Cancelar',
+        iconColor: 'black',
+        
+        
+    }).then((result) => {
+
+        if(result.isConfirmed){
+            Swal.fire({
+                icon: "success",
+                title: "Compra realizada",
+                text: "Enviamos un correo a su Email",
+            });
+        }
+    }) 
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 
 
 /* function mostrarAutos(automoviles){
@@ -430,3 +502,6 @@ function imprimirCard(auto){
         console.log(auto.marca + " - " + auto.modelo + " - " + auto.year + " - " + auto.puertas + " Puertas - $" + auto.precio)
     });
 }  */
+
+
+/* Planes de ahorro */
