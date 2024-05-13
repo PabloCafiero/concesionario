@@ -1,5 +1,11 @@
+let autos
 
-
+fetch("../js/autos.json")
+    .then(response => response.json())
+    .then(data =>{ 
+        const autos = data;
+        console.log(autos)
+    
 
 let autosNuevos= autos.filter((auto) => auto.estado == "nuevo")
 
@@ -481,19 +487,10 @@ function compra(){
     }) 
 
 
-
-
-
-
-
-
-
-
-
 }
 
 
-
+}) //JSON
 
 
 /* function mostrarAutos(automoviles){
@@ -504,4 +501,3 @@ function compra(){
 }  */
 
 
-/* Planes de ahorro */
